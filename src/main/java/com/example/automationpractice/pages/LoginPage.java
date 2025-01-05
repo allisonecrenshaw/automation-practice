@@ -1,4 +1,4 @@
-package com.example.swaglabsautomation.pages;
+package com.example.automationpractice.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

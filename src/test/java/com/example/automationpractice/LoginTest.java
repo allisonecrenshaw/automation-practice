@@ -1,12 +1,13 @@
-package com.example.swaglabsautomation;
+package com.example.automationpractice;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import config.GlobalVariables;
 
-import com.example.swaglabsautomation.pages.LoginPage;
+import com.example.automationpractice.pages.LoginPage;
+
+import config.GlobalVariables;
 
 
 public class LoginTest {

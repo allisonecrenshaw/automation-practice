@@ -1,4 +1,4 @@
-package com.example.swaglabsautomation;
+package com.example.automationpractice;
 
 /**
  * Hello world!

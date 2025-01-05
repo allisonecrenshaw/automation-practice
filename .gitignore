@@ -1,0 +1,46 @@
+# Maven target directory
+/target/
+
+# IntelliJ IDEA files
+/.idea/
+/*.iml
+*.iws
+
+# VS Code files
+/.vscode/
+
+# Logs
+*.log
+
+# Compiled class files
+*.class
+
+# Temporary files
+*.swp
+*.swo
+*~
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Maven specific
+.mvn/
+!**/src/main/**/mvn/
+dependency-reduced-pom.xml
+release.properties
+buildNumber.properties
+
+# Java-specific
+*.jar
+*.war
+*.ear
+
+# Generated files from mvn install
+mvn-timestamps/
+
+# Maven target directory
+/target/
+
+# Personal notes file
+notes.txt

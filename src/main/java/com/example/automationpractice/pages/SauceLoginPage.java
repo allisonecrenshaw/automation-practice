@@ -3,14 +3,14 @@ package com.example.automationpractice.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class LoginPage {
+public class SauceLoginPage {
   private WebDriver driver;
 
   private By usernameField = By.id("user-name");
   private By passwordField = By.id("password");
   private By loginButton = By.id("login-button");
 
-  public LoginPage(WebDriver driver) {
+  public SauceLoginPage(WebDriver driver) {
     this.driver = driver;
   }
 

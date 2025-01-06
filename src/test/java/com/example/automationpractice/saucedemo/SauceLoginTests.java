@@ -10,7 +10,7 @@ import com.example.automationpractice.pages.SauceLoginPage;
 import config.SauceGlobalVariables;
 
 // Test of the SauceLabs demo page login
-public class SauceLogin {
+public class SauceLoginTests {
   @Test
   public void loginWithValidCredentials() {
     WebDriver driver = new ChromeDriver();

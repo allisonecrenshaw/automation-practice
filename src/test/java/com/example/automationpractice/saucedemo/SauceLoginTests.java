@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.example.automationpractice.pages.SauceLoginPage;
 
-import config.SauceGlobalVariables;
+import config.GlobalVariables;
 
 // Test of the SauceLabs demo page login
 public class SauceLoginTests {
@@ -21,13 +21,13 @@ public class SauceLoginTests {
   public void loginWithValidCredentials() {
     WebDriver driver = new ChromeDriver();
 
-    driver.get(SauceGlobalVariables.SAUCE_BASE_URL);
+    driver.get(GlobalVariables.SAUCE_BASE_URL);
 
     SauceLoginPage loginPage = new SauceLoginPage(driver);
-    loginPage.login(SauceGlobalVariables.SAUCE_STANDARD_USER, SauceGlobalVariables.SAUCE_VALID_PASSWORD);
+    loginPage.login(GlobalVariables.SAUCE_STANDARD_USER, GlobalVariables.SAUCE_VALID_PASSWORD);
 
     String newUrl = driver.getCurrentUrl();
-    Assertions.assertEquals(SauceGlobalVariables.SAUCE_INVENTORY_URL, newUrl);
+    Assertions.assertEquals(GlobalVariables.SAUCE_INVENTORY_URL, newUrl);
 
     driver.quit();
   }
@@ -36,10 +36,10 @@ public class SauceLoginTests {
   public void loginWithInvalidPassword() {
     WebDriver driver = new ChromeDriver();
 
-    driver.get(SauceGlobalVariables.SAUCE_BASE_URL);
+    driver.get(GlobalVariables.SAUCE_BASE_URL);
     
     SauceLoginPage loginPage = new SauceLoginPage(driver);
-    loginPage.login(SauceGlobalVariables.SAUCE_STANDARD_USER, SauceGlobalVariables.SAUCE_INVALID_PASSWORD);
+    loginPage.login(GlobalVariables.SAUCE_STANDARD_USER, GlobalVariables.SAUCE_INVALID_PASSWORD);
 
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
     WebElement errorMessageContainer = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".error-message-container.error")));
@@ -51,7 +51,7 @@ public class SauceLoginTests {
     Assertions.assertEquals(errorMessage, expectedErrorMessage);
     
     String currentUrl = driver.getCurrentUrl();
-    Assertions.assertEquals(SauceGlobalVariables.SAUCE_BASE_URL, currentUrl);
+    Assertions.assertEquals(GlobalVariables.SAUCE_BASE_URL, currentUrl);
 
     driver.quit();
   }

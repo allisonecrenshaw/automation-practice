@@ -1,6 +1,6 @@
 package config;
 
-public class SauceGlobalVariables {
+public class GlobalVariables {
   // URLs
   public static final String SAUCE_BASE_URL = "https://www.saucedemo.com/";
   public static final String SAUCE_INVENTORY_URL = "https://www.saucedemo.com/inventory.html";
